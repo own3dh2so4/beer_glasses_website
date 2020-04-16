@@ -67,7 +67,7 @@ body .container {
     min-width: 200px;
     grid-area: glass-photo;
     overflow: hidden;
-    margin: auto;
+    margin: 10px;
 }
 
 .glass-selector {
