@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/diekirch/name.png" alt="Diekirch" class=""/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/diekirch/diekirch_0.jpg" alt="diekirch" style="transform: rotate(90deg);"/>
+        </figure>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Diekirch</text></p>
+        <p><b>City:</b> <text>Diekirch</text></p>
+        <p><b>Country:</b> <text>Luxembourg</text></p>
+        <p><b>Website:</b> <a href="https://brasseriedeluxembourg.lu/" target="_blank">https://brasseriedeluxembourg.lu/</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Diekirch</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">Luxembourg</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">Luxembourg</text></p>
+        <p><b>Got:</b> <text id="glass-got">steal</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d138599.89492614375!2d6.04132005992323!3d49.79773075497975!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1e60ccd6b7449a2!2sBrasserie%20de%20Luxembourg%20Mousel-Diekirch%20S.A!5e0!3m2!1ses!2ses!4v1583672895018!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1345.7306035261395!2d6.12847076623662!3d49.60925147722932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479548d35dfb9687%3A0x3ba1048e14e6a7c9!2sMonumento%20del%20Recuerdo!5e1!3m2!1ses!2ses!4v1583672701167!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function diekirch() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#diekirch').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/diekirch\/diekirch_0.jpg');
+        glass_image.attr('alt', 'diekirch');
+        $('#glass-name').text('Diekirch');
+        $('#glass-city').text('Luxembourg');
+        $('#glass-county').text('Luxembourg');
+        $('#glass-got').text('steal');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d1345.7306035261395!2d6.12847076623662!3d49.60925147722932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479548d35dfb9687%3A0x3ba1048e14e6a7c9!2sMonumento%20del%20Recuerdo!5e1!3m2!1ses!2ses!4v1583672701167!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/kondaira/name.png" alt="Kondaira" class=""/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/kondaira/kondaira_0.jpg" alt="kondaira" style="transform: rotate(90deg);"/>
+        </figure>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Kondaira</text></p>
+        <p><b>City:</b> <text>Navarra</text></p>
+        <p><b>Country:</b> <text>Spain</text></p>
+        <p><b>Website:</b> <a href="http://www.cervezaskondaira.beer/" target="_blank">http://www.cervezaskondaira.beer/</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Kondaira</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">Spain</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">La Rioja</text></p>
+        <p><b>Got:</b> <text id="glass-got">buy</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23554.303025905658!2d-2.2148712167384037!3d42.442890591568144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5aa3dd6e24847d%3A0x7f6ac3b3f58d666d!2s31587%20Mendavia%2C%20Navarra!5e0!3m2!1ses!2ses!4v1584189591099!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4387.001160025954!2d-2.7370907944290783!3d42.41809724735092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDI1JzAxLjAiTiAywrA0NCcwNy4wIlc!5e1!3m2!1ses!2ses!4v1584189039918!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function kondaira() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#kondaira').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/kondaira\/kondaira_0.jpg');
+        glass_image.attr('alt', 'kondaira');
+        $('#glass-name').text('Kondaira');
+        $('#glass-city').text('Spain');
+        $('#glass-county').text('La Rioja');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d4387.001160025954!2d-2.7370907944290783!3d42.41809724735092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDI1JzAxLjAiTiAywrA0NCcwNy4wIlc!5e1!3m2!1ses!2ses!4v1584189039918!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

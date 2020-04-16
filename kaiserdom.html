@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/kaiserdom/name.png" alt="Kaiserdom" class=""/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/kaiserdom/kaiserdom_0.jpg" alt="kaiserdom" style="transform: rotate(90deg);"/>
+        </figure>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Kaiserdom</text></p>
+        <p><b>City:</b> <text>Bamberg</text></p>
+        <p><b>Country:</b> <text>Germany</text></p>
+        <p><b>Website:</b> <a href="https://kaiserdom.de/" target="_blank">https://kaiserdom.de/</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Kaiserdom</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">Nuremberg</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">Germany</text></p>
+        <p><b>Got:</b> <text id="glass-got">buy</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4448.367871773289!2d10.849898734253301!3d49.90411757964049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a23cb42b7a03b3%3A0x48255ed795d0cdea!2sKaiserdom%20Specialit%C3%A4ten%20Brauerei%20GmbH%20Bamberg!5e0!3m2!1ses!2ses!4v1584187622593!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32764.8778396647!2d11.052439457388564!3d49.49688665519118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a1fd7875cb0627%3A0x72cafc6bb89cfa2f!2sAeropuerto%20de%20N%C3%BAremberg!5e0!3m2!1ses!2ses!4v1584187333267!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function kaiserdom() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#kaiserdom').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/kaiserdom\/kaiserdom_0.jpg');
+        glass_image.attr('alt', 'kaiserdom');
+        $('#glass-name').text('Kaiserdom');
+        $('#glass-city').text('Nuremberg');
+        $('#glass-county').text('Germany');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d32764.8778396647!2d11.052439457388564!3d49.49688665519118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a1fd7875cb0627%3A0x72cafc6bb89cfa2f!2sAeropuerto%20de%20N%C3%BAremberg!5e0!3m2!1ses!2ses!4v1584187333267!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

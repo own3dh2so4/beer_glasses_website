@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/goose_island/name.png" alt="Gose Island" class="background-color "/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/goose_island/goose_island_0.jpg" alt="goose_island" style="transform: rotate(90deg);"/>
+        </figure>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Gose Island</text></p>
+        <p><b>City:</b> <text>Philadelphia</text></p>
+        <p><b>Country:</b> <text>United States</text></p>
+        <p><b>Website:</b> <a href="https://www.gooseisland.com/" target="_blank">https://www.gooseisland.com/</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Goose Island</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">New York</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">United States</text></p>
+        <p><b>Got:</b> <text id="glass-got">steal</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5142.853359269671!2d-75.13922437446477!3d39.964671534975565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c8663a5f9bed%3A0x61cd6a7d00bbc9f9!2sGoose%20Island%20Brewhouse!5e0!3m2!1ses!2ses!4v1583957465670!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7400.118688963177!2d-73.99327126875089!3d40.744600156627925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a665325aff%3A0x3ac777522187cfd5!2s230%20Fifth!5e0!3m2!1ses!2ses!4v1583957243199!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function goose_island() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#goose_island').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/goose_island\/goose_island_0.jpg');
+        glass_image.attr('alt', 'goose_island');
+        $('#glass-name').text('Goose Island');
+        $('#glass-city').text('New York');
+        $('#glass-county').text('United States');
+        $('#glass-got').text('steal');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d7400.118688963177!2d-73.99327126875089!3d40.744600156627925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a665325aff%3A0x3ac777522187cfd5!2s230%20Fifth!5e0!3m2!1ses!2ses!4v1583957243199!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/staropramen/name.png" alt="Staropramen" class="background-color "/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/staropramen/staropramen_0.jpg" alt="staropramen" style="transform: rotate(90deg);"/>
+        </figure>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Staropramen</text></p>
+        <p><b>City:</b> <text>Prague</text></p>
+        <p><b>Country:</b> <text>Czech Republic</text></p>
+        <p><b>Website:</b> <a href="https://www.staropramen.com/" target="_blank">https://www.staropramen.com/</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Staropramen</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">Madrid</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">Spain</text></p>
+        <p><b>Got:</b> <text id="glass-got">buy</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17734.52074571415!2d14.398696138986123!3d50.063753918065025!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x393aefd11480249!2sStaropramen%20Brewery!5e0!3m2!1ses!2ses!4v1584293555772!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.626657355686!2d-3.67767748460475!3d40.39496637936768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226133bb8aebb%3A0x44e5e3c849f0954c!2sHipercor%20M%C3%A9ndez%20%C3%81lvaro!5e0!3m2!1ses!2ses!4v1583076467865!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function staropramen() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#staropramen').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/staropramen\/staropramen_0.jpg');
+        glass_image.attr('alt', 'staropramen');
+        $('#glass-name').text('Staropramen');
+        $('#glass-city').text('Madrid');
+        $('#glass-county').text('Spain');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3038.626657355686!2d-3.67767748460475!3d40.39496637936768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226133bb8aebb%3A0x44e5e3c849f0954c!2sHipercor%20M%C3%A9ndez%20%C3%81lvaro!5e0!3m2!1ses!2ses!4v1583076467865!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

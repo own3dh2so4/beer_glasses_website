@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/delirium/name.svg" alt="Delirium Tremens" class=""/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/delirium/delirium_0.jpg" alt="delirium" style="transform: rotate(90deg);"/>
+        </figure>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Delirium Tremens</text></p>
+        <p><b>City:</b> <text>Melle</text></p>
+        <p><b>Country:</b> <text>Belgium</text></p>
+        <p><b>Website:</b> <a href="https://www.delirium.be/" target="_blank">https://www.delirium.be/</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Delirium Tremens</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">Madrid</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">Spain</text></p>
+        <p><b>Got:</b> <text id="glass-got">buy</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7524.2392433058285!2d3.803081062458076!3d50.99926801496198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf46be04d4d3fe685!2sHuyghe%20Brewery!5e0!3m2!1ses!2ses!4v1583512635647!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12081.010950335169!2d4.4402652712893556!3d50.464944101215806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c228d0db96d9e5%3A0xc4a2ed66e37660d2!2sAeropuerto%20de%20Bruselas%20Sur!5e0!3m2!1ses!2ses!4v1583512378572!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function delirium() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#delirium').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/delirium\/delirium_0.jpg');
+        glass_image.attr('alt', 'delirium');
+        $('#glass-name').text('Delirium Tremens');
+        $('#glass-city').text('Madrid');
+        $('#glass-county').text('Spain');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d12081.010950335169!2d4.4402652712893556!3d50.464944101215806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c228d0db96d9e5%3A0xc4a2ed66e37660d2!2sAeropuerto%20de%20Bruselas%20Sur!5e0!3m2!1ses!2ses!4v1583512378572!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

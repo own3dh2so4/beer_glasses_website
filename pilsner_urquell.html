@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/pilsner_urquell/name.png" alt="Pilsner Urquell" class=""/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/pilsner_urquell/pilsner_urquell_0.jpg" alt="pilsner_urquell" style="transform: rotate(90deg);"/>
+        </figure>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Pilsner Urquell</text></p>
+        <p><b>City:</b> <text>Plzeň</text></p>
+        <p><b>Country:</b> <text>Czech Republic</text></p>
+        <p><b>Website:</b> <a href="https://www.pilsnerurquell.com/" target="_blank">https://www.pilsnerurquell.com/</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Pilsner Urquell</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">Madrid</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">Spain</text></p>
+        <p><b>Got:</b> <text id="glass-got">buy</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10312.375591292895!2d13.38674!3d49.746677!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x360b8c2294d85eaa!2zUGx6ZcWIc2vDvSBQcmF6ZHJvaiwgYS4gcy4!5e0!3m2!1ses!2ses!4v1584276012861!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7226.131561448994!2d-3.716243804231371!3d40.40410838462579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227c52b28838d%3A0xcfff6ac186596f8!2sMakro%20Paseo%20Imperial!5e0!3m2!1ses!2ses!4v1583508359541!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function pilsner_urquell() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#pilsner_urquell').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/pilsner_urquell\/pilsner_urquell_0.jpg');
+        glass_image.attr('alt', 'pilsner_urquell');
+        $('#glass-name').text('Pilsner Urquell');
+        $('#glass-city').text('Madrid');
+        $('#glass-county').text('Spain');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d7226.131561448994!2d-3.716243804231371!3d40.40410838462579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227c52b28838d%3A0xcfff6ac186596f8!2sMakro%20Paseo%20Imperial!5e0!3m2!1ses!2ses!4v1583508359541!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

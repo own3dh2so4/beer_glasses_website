@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/septem/name.png" alt="Septem" class="background-color "/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/septem/septem_0.jpg" alt="septem" style="transform: rotate(90deg);"/>
+        </figure>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Septem</text></p>
+        <p><b>City:</b> <text>Central Greece</text></p>
+        <p><b>Country:</b> <text>Greece</text></p>
+        <p><b>Website:</b> <a href="http://septem.gr" target="_blank">http://septem.gr</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Septem</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">Athens</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">Greece</text></p>
+        <p><b>Got:</b> <text id="glass-got">present</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12486.358487822488!2d24.1075203!3d38.5201745!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x38bac46c537cb731!2sSeptem%20Microbrewery!5e0!3m2!1ses!2ses!4v1584290979264!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.1011975932206!2d23.730339315644645!3d37.97476757972343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd3dcf170b11%3A0x79d89ce43cabf297!2sCellar%20Matsoukas!5e0!3m2!1ses!2ses!4v1584273438562!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function septem() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#septem').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/septem\/septem_0.jpg');
+        glass_image.attr('alt', 'septem');
+        $('#glass-name').text('Septem');
+        $('#glass-city').text('Athens');
+        $('#glass-county').text('Greece');
+        $('#glass-got').text('present');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3145.1011975932206!2d23.730339315644645!3d37.97476757972343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd3dcf170b11%3A0x79d89ce43cabf297!2sCellar%20Matsoukas!5e0!3m2!1ses!2ses!4v1584273438562!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

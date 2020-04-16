@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/hausbrauerei_altstadthof/name.png" alt="Hausbrauerei Altstadthof" class=""/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/hausbrauerei_altstadthof/hausbrauerei_altstadthof_0.jpg" alt="hausbrauerei_altstadthof" style="transform: rotate(90deg);"/>
+        </figure>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Hausbrauerei Altstadthof</text></p>
+        <p><b>City:</b> <text>Nuremberg</text></p>
+        <p><b>Country:</b> <text>Germany</text></p>
+        <p><b>Website:</b> <a href="https://www.hausbrauerei-altstadthof.de/" target="_blank">https://www.hausbrauerei-altstadthof.de/</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Hausbrauerei Altstadthof</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">Nuremberg</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">Germany</text></p>
+        <p><b>Got:</b> <text id="glass-got">buy</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10373.810325630315!2d11.0748976!3d49.4570626!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8959463b2fd7bb52!2sHausbrauerei%20Altstadthof!5e0!3m2!1ses!2ses!4v1584044163296!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10373.810325630315!2d11.0748976!3d49.4570626!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8959463b2fd7bb52!2sHausbrauerei%20Altstadthof!5e0!3m2!1ses!2ses!4v1584044163296!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function hausbrauerei_altstadthof() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#hausbrauerei_altstadthof').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/hausbrauerei_altstadthof\/hausbrauerei_altstadthof_0.jpg');
+        glass_image.attr('alt', 'hausbrauerei_altstadthof');
+        $('#glass-name').text('Hausbrauerei Altstadthof');
+        $('#glass-city').text('Nuremberg');
+        $('#glass-county').text('Germany');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m14!1m8!1m3!1d10373.810325630315!2d11.0748976!3d49.4570626!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8959463b2fd7bb52!2sHausbrauerei%20Altstadthof!5e0!3m2!1ses!2ses!4v1584044163296!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

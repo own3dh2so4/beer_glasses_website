@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/brooklyn/name.png" alt="Brooklyn" class=""/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/brooklyn/brooklyn_classic_0.jpg" alt="brooklyn" style="transform: rotate(90deg);"/>
+        </figure>
+        
+            <div class="glass-selector">
+                
+                    <a href="#" onclick="brooklyn_classic()" id="brooklyn_classic" class="glass-option circle"></a>
+                
+                    <a href="#" onclick="brooklyn_transp()" id="brooklyn_transp" class="glass-option circle"></a>
+                
+            </div>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Brooklyn</text></p>
+        <p><b>City:</b> <text>New York</text></p>
+        <p><b>Country:</b> <text>United States</text></p>
+        <p><b>Website:</b> <a href="https://brooklynbrewery.com/" target="_blank">https://brooklynbrewery.com/</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Brooklyn classic</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">New York</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">United States</text></p>
+        <p><b>Got:</b> <text id="glass-got">buy</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12095.544676354722!2d-73.9570233!3d40.7205223!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x45e51659594a28fa!2sBrooklyn%20Brewery!5e0!3m2!1ses!2ses!4v1583179982717!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12095.544676354722!2d-73.9570233!3d40.7205223!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x45e51659594a28fa!2sBrooklyn%20Brewery!5e0!3m2!1ses!2ses!4v1583179982717!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function brooklyn_classic() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#brooklyn_classic').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/brooklyn\/brooklyn_classic_0.jpg');
+        glass_image.attr('alt', 'brooklyn_classic');
+        $('#glass-name').text('Brooklyn classic');
+        $('#glass-city').text('New York');
+        $('#glass-county').text('United States');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m14!1m8!1m3!1d12095.544676354722!2d-73.9570233!3d40.7205223!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x45e51659594a28fa!2sBrooklyn%20Brewery!5e0!3m2!1ses!2ses!4v1583179982717!5m2!1ses!2ses');
+    }
+    
+
+    function brooklyn_transp() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#brooklyn_transp').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/brooklyn\/brooklyn_transp_0.jpg');
+        glass_image.attr('alt', 'brooklyn_transp');
+        $('#glass-name').text('Brooklyn transparent');
+        $('#glass-city').text('New York');
+        $('#glass-county').text('United States');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m14!1m8!1m3!1d12095.544676354722!2d-73.9570233!3d40.7205223!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x45e51659594a28fa!2sBrooklyn%20Brewery!5e0!3m2!1ses!2ses!4v1583179982717!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

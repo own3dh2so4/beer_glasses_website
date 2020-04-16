@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/hapkin/name.png" alt="Hapkin" class=""/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/hapkin/hapkin_0.jpg" alt="hapkin" style="transform: rotate(90deg);"/>
+        </figure>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Hapkin</text></p>
+        <p><b>City:</b> <text>Kortemark</text></p>
+        <p><b>Country:</b> <text>Belgium</text></p>
+        <p><b>Website:</b> <a href="https://www.hapkin.be/" target="_blank">https://www.hapkin.be/</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Hapkin</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">Brussels</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">Belgium</text></p>
+        <p><b>Got:</b> <text id="glass-got">buy</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40150.41427159136!2d2.9642806650710027!3d51.02721471702766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c34b32bb3ae2e3%3A0x10ad9c1a2b64fcc2!2s8610%20Kortemark%2C%20B%C3%A9lgica!5e0!3m2!1ses!2ses!4v1584036894896!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d890.6185475726169!2d4.349607809802909!3d50.848764704109705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c387721fed35%3A0x69f371c4b38eeeb5!2sAD%20Anspach!5e0!3m2!1ses!2ses!4v1584035664980!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function hapkin() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#hapkin').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/hapkin\/hapkin_0.jpg');
+        glass_image.attr('alt', 'hapkin');
+        $('#glass-name').text('Hapkin');
+        $('#glass-city').text('Brussels');
+        $('#glass-county').text('Belgium');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d890.6185475726169!2d4.349607809802909!3d50.848764704109705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c387721fed35%3A0x69f371c4b38eeeb5!2sAD%20Anspach!5e0!3m2!1ses!2ses!4v1584035664980!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

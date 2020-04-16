@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/estrella_galicia/name.png" alt="Estella Galicia" class=""/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/estrella_galicia/estrella_galicia_1906_0.jpg" alt="estrella_galicia" style="transform: rotate(90deg);"/>
+        </figure>
+        
+            <div class="glass-selector">
+                
+                    <a href="#" onclick="estrella_galicia_1906()" id="estrella_galicia_1906" class="glass-option circle"></a>
+                
+                    <a href="#" onclick="estrella_galicia_1906_red_vintage()" id="estrella_galicia_1906_red_vintage" class="glass-option circle"></a>
+                
+            </div>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Estella Galicia</text></p>
+        <p><b>City:</b> <text>Galicia</text></p>
+        <p><b>Country:</b> <text>Spain</text></p>
+        <p><b>Website:</b> <a href="https://estrellagalicia.es/" target="_blank">https://estrellagalicia.es/</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Estella Galicia 1906</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">Madrid</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">Spain</text></p>
+        <p><b>Got:</b> <text id="glass-got">buy</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2901.1558801198644!2d-8.42153868421564!3d43.35284987913283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2e7cecb9869c47%3A0xb2bf8b2a95f9258e!2sF%C3%A1brica%20Estrella%20Galicia!5e0!3m2!1ses!2ses!4v1583678436058!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.626657355686!2d-3.67767748460475!3d40.39496637936768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226133bb8aebb%3A0x44e5e3c849f0954c!2sHipercor%20M%C3%A9ndez%20%C3%81lvaro!5e0!3m2!1ses!2ses!4v1583076467865!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function estrella_galicia_1906() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#estrella_galicia_1906').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/estrella_galicia\/estrella_galicia_1906_0.jpg');
+        glass_image.attr('alt', 'estrella_galicia_1906');
+        $('#glass-name').text('Estella Galicia 1906');
+        $('#glass-city').text('Madrid');
+        $('#glass-county').text('Spain');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3038.626657355686!2d-3.67767748460475!3d40.39496637936768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226133bb8aebb%3A0x44e5e3c849f0954c!2sHipercor%20M%C3%A9ndez%20%C3%81lvaro!5e0!3m2!1ses!2ses!4v1583076467865!5m2!1ses!2ses');
+    }
+    
+
+    function estrella_galicia_1906_red_vintage() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#estrella_galicia_1906_red_vintage').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/estrella_galicia\/estrella_galicia_1906_red_vintage_0.jpg');
+        glass_image.attr('alt', 'estrella_galicia_1906_red_vintage');
+        $('#glass-name').text('Estrella Galicia 1906 Red Vintage');
+        $('#glass-city').text('Madrid');
+        $('#glass-county').text('Spain');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d1859.3529419443198!2d-3.701367507158732!3d40.408285305457156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd70f13c12d3417a2!2sCarrefour%20Market!5e0!3m2!1ses!2ses!4v1583678607154!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

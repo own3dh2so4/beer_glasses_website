@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/guinness/name.svg" alt="Guinness" class=""/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/guinness/guinness_0.jpg" alt="guinness" style="transform: rotate(90deg);"/>
+        </figure>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Guinness</text></p>
+        <p><b>City:</b> <text>Dublin</text></p>
+        <p><b>Country:</b> <text>Ireland</text></p>
+        <p><b>Website:</b> <a href="https://www.guinness.com/" target="_blank">https://www.guinness.com/</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Guinness</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">Dublin</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">Ireland</text></p>
+        <p><b>Got:</b> <text id="glass-got">buy</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13091.82998617481!2d-6.29360110277232!3d53.34065102320598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8440c5056b%3A0xb31933927505e7a2!2sGuinness%20Storehouse!5e0!3m2!1ses!2ses!4v1584035323567!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13091.82998617481!2d-6.29360110277232!3d53.34065102320598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8440c5056b%3A0xb31933927505e7a2!2sGuinness%20Storehouse!5e0!3m2!1ses!2ses!4v1584035323567!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function guinness() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#guinness').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/guinness\/guinness_0.jpg');
+        glass_image.attr('alt', 'guinness');
+        $('#glass-name').text('Guinness');
+        $('#glass-city').text('Dublin');
+        $('#glass-county').text('Ireland');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d13091.82998617481!2d-6.29360110277232!3d53.34065102320598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8440c5056b%3A0xb31933927505e7a2!2sGuinness%20Storehouse!5e0!3m2!1ses!2ses!4v1584035323567!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

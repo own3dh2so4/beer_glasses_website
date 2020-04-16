@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/la_corne/name.png" alt="La Corne" class="background-color "/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/la_corne/la_corne_0.jpg" alt="la_corne" style="transform: rotate(90deg);"/>
+        </figure>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>La Corne</text></p>
+        <p><b>City:</b> <text>Ath</text></p>
+        <p><b>Country:</b> <text>Belgium</text></p>
+        <p><b>Website:</b> <a href="http://www.lacorneduboisdespendus.be/" target="_blank">http://www.lacorneduboisdespendus.be/</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">La Corne</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">Brussels</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">Belgium</text></p>
+        <p><b>Got:</b> <text id="glass-got">buy</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1505.1474791392025!2d3.7582278477471966!3d50.620684496494036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3001e576d0fa1%3A0x3d05651ed15e48ef!2sBrasserie%20des%20legendes!5e0!3m2!1ses!2ses!4v1584208216429!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d965.447787322843!2d4.350448924987735!3d50.84819629861285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c3875b2b27e9%3A0xc482a05f5c0f4668!2sCarrefour%20Market!5e0!3m2!1ses!2ses!4v1584208013242!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function la_corne() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#la_corne').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/la_corne\/la_corne_0.jpg');
+        glass_image.attr('alt', 'la_corne');
+        $('#glass-name').text('La Corne');
+        $('#glass-city').text('Brussels');
+        $('#glass-county').text('Belgium');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d965.447787322843!2d4.350448924987735!3d50.84819629861285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c3875b2b27e9%3A0xc482a05f5c0f4668!2sCarrefour%20Market!5e0!3m2!1ses!2ses!4v1584208013242!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/cornet/name.png" alt="Cornet" class="background-color "/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/cornet/cornet_0.jpg" alt="cornet" style="transform: rotate(90deg);"/>
+        </figure>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Cornet</text></p>
+        <p><b>City:</b> <text>Steenhuffel</text></p>
+        <p><b>Country:</b> <text>Belgium</text></p>
+        <p><b>Website:</b> <a href="https://www.cornetbier.be/" target="_blank">https://www.cornetbier.be/</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Cornet</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">Belgium</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">Brussels</text></p>
+        <p><b>Got:</b> <text id="glass-got">buy</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6147.2095179763!2d4.26184222498439!3d50.99757461926541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3eba3d45957f5%3A0xf5469a01b08cf1db!2sS-hop%20Cornet%2C%20Rodenbach%20%26%20Palm!5e0!3m2!1ses!2ses!4v1583510597067!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47882.77499239238!2d4.450976179546233!3d50.895438917583405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3ddbec45275ed%3A0x24514e3e0e7f25e4!2sAeropuerto%20de%20Bruselas!5e0!3m2!1ses!2ses!4v1583180827934!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function cornet() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#cornet').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/cornet\/cornet_0.jpg');
+        glass_image.attr('alt', 'cornet');
+        $('#glass-name').text('Cornet');
+        $('#glass-city').text('Belgium');
+        $('#glass-county').text('Brussels');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d47882.77499239238!2d4.450976179546233!3d50.895438917583405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3ddbec45275ed%3A0x24514e3e0e7f25e4!2sAeropuerto%20de%20Bruselas!5e0!3m2!1ses!2ses!4v1583180827934!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

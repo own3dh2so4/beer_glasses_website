@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/forst/name.png" alt="Forst" class=""/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/forst/felsenkeller_0.jpg" alt="forst" style="transform: rotate(90deg);"/>
+        </figure>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Forst</text></p>
+        <p><b>City:</b> <text>South Tyrol</text></p>
+        <p><b>Country:</b> <text>Italy</text></p>
+        <p><b>Website:</b> <a href="https://www.forst.it/" target="_blank">https://www.forst.it/</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Felsenkeller</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">Genoa</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">Italy</text></p>
+        <p><b>Got:</b> <text id="glass-got">buy</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117366.14949856425!2d11.011987127957214!3d46.56732378604381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfca9e5aef4f86a1b!2zQnLDpHVzdMO8YmVybCBGb3JzdA!5e0!3m2!1ses!2ses!4v1583679159107!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d599.1603771501241!2d8.931446779119067!3d44.410529346284484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d343e6ee2c626b%3A0x25219efd8d5720d!2sBeershop%20Maddalena!5e0!3m2!1ses!2ses!4v1583679365202!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function felsenkeller() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#felsenkeller').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/forst\/felsenkeller_0.jpg');
+        glass_image.attr('alt', 'felsenkeller');
+        $('#glass-name').text('Felsenkeller');
+        $('#glass-city').text('Genoa');
+        $('#glass-county').text('Italy');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d599.1603771501241!2d8.931446779119067!3d44.410529346284484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d343e6ee2c626b%3A0x25219efd8d5720d!2sBeershop%20Maddalena!5e0!3m2!1ses!2ses!4v1583679365202!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

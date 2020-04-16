@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/brew_dog/name.png" alt="Brew dog" class="background-color "/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/brew_dog/brew_dog_0.jpg" alt="brew_dog" style="transform: rotate(90deg);"/>
+        </figure>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Brew dog</text></p>
+        <p><b>City:</b> <text>scotland</text></p>
+        <p><b>Country:</b> <text>United Kingdom</text></p>
+        <p><b>Website:</b> <a href="https://www.brewdog.com/" target="_blank">https://www.brewdog.com/</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Brew dog</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">Madrid</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">Spain</text></p>
+        <p><b>Got:</b> <text id="glass-got">buy</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2151.305906593154!2d-2.0564092837861856!3d57.370874481016926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4884716920aeb86d%3A0xd6dd4d6ceebf0820!2sBrewDog%20DogTap!5e0!3m2!1ses!2ses!4v1583179328848!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.626657355686!2d-3.67767748460475!3d40.39496637936768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226133bb8aebb%3A0x44e5e3c849f0954c!2sHipercor%20M%C3%A9ndez%20%C3%81lvaro!5e0!3m2!1ses!2ses!4v1583076467865!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function brew_dog() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#brew_dog').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/brew_dog\/brew_dog_0.jpg');
+        glass_image.attr('alt', 'brew_dog');
+        $('#glass-name').text('Brew dog');
+        $('#glass-city').text('Madrid');
+        $('#glass-county').text('Spain');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3038.626657355686!2d-3.67767748460475!3d40.39496637936768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226133bb8aebb%3A0x44e5e3c849f0954c!2sHipercor%20M%C3%A9ndez%20%C3%81lvaro!5e0!3m2!1ses!2ses!4v1583076467865!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

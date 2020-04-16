@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/super_bock/name.png" alt="Super Bock" class=""/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/super_bock/super_bock_0.jpg" alt="super_bock" style="transform: rotate(90deg);"/>
+        </figure>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Super Bock</text></p>
+        <p><b>City:</b> <text>Oporto</text></p>
+        <p><b>Country:</b> <text>Portugal</text></p>
+        <p><b>Website:</b> <a href="https://www.superbockgroup.com/" target="_blank">https://www.superbockgroup.com/</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Super Bock</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">Portugal</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">Azores</text></p>
+        <p><b>Got:</b> <text id="glass-got">buy</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53920.676769185426!2d-8.627933075948325!3d41.191983816278075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24666502af9b9f%3A0xc14de828c48f0aa5!2sSuper%20Bock%20Beer%20House!5e0!3m2!1ses!2ses!4v1584295095483!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d778.9314845951969!2d-27.21788871970095!3d38.655181529227214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb467f1d23bf860d%3A0x913135490f14c359!2sTaberna%20madeirense!5e0!3m2!1ses!2ses!4v1584294956314!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function super_bock() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#super_bock').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/super_bock\/super_bock_0.jpg');
+        glass_image.attr('alt', 'super_bock');
+        $('#glass-name').text('Super Bock');
+        $('#glass-city').text('Portugal');
+        $('#glass-county').text('Azores');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d778.9314845951969!2d-27.21788871970095!3d38.655181529227214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb467f1d23bf860d%3A0x913135490f14c359!2sTaberna%20madeirense!5e0!3m2!1ses!2ses!4v1584294956314!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

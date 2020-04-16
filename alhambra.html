@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/alhambra/name.png" alt="Alhambra" class=""/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/alhambra/alhambra_1925_0.jpg" alt="alhambra" style="transform: rotate(90deg);"/>
+        </figure>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Alhambra</text></p>
+        <p><b>City:</b> <text>Granada</text></p>
+        <p><b>Country:</b> <text>Spain</text></p>
+        <p><b>Website:</b> <a href="https://www.cervezasalhambra.com/" target="_blank">https://www.cervezasalhambra.com/</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Alhambra 1925</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">Madrid</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">Spain</text></p>
+        <p><b>Got:</b> <text id="glass-got">buy</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12714.04997390774!2d-3.6028294!3d37.188055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb5b22c8467215b0f!2sCervezas%20Alhambra!5e0!3m2!1ses!2ses!4v1583078092561!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d638.7555680334494!2d-3.696593265972589!3d40.39886611706477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226314787a177%3A0xa9395dd8b5fc537c!2sSupersol%20Supermercados!5e0!3m2!1ses!2ses!4v1583078304041!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function alhambra_1925() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#alhambra_1925').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/alhambra\/alhambra_1925_0.jpg');
+        glass_image.attr('alt', 'alhambra_1925');
+        $('#glass-name').text('Alhambra 1925');
+        $('#glass-city').text('Madrid');
+        $('#glass-county').text('Spain');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d638.7555680334494!2d-3.696593265972589!3d40.39886611706477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226314787a177%3A0xa9395dd8b5fc537c!2sSupersol%20Supermercados!5e0!3m2!1ses!2ses!4v1583078304041!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

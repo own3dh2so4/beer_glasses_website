@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/mahou/name.png" alt="Mahou" class=""/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/mahou/mahou_barrica_0.jpg" alt="mahou" style="transform: rotate(90deg);"/>
+        </figure>
+        
+            <div class="glass-selector">
+                
+                    <a href="#" onclick="mahou_barrica()" id="mahou_barrica" class="glass-option circle"></a>
+                
+                    <a href="#" onclick="mahou_maestra()" id="mahou_maestra" class="glass-option circle"></a>
+                
+            </div>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Mahou</text></p>
+        <p><b>City:</b> <text>Madrid</text></p>
+        <p><b>Country:</b> <text>Spain</text></p>
+        <p><b>Website:</b> <a href="https://www.mahou.es" target="_blank">https://www.mahou.es</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Mahou Barrica</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">Madrid</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">Spain</text></p>
+        <p><b>Got:</b> <text id="glass-got">buy</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d115332.1537517447!2d-3.3600370563000803!3d40.57030543251832!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5c8cf4b226147c2!2sF%C3%A1brica%20de%20Mahou%20SA!5e0!3m2!1ses!2ses!4v1584269851745!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4461.898940063981!2d-3.6960865063057344!3d40.401774238159526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9395dd8b5fc537c!2sSupersol%20Supermercados!5e0!3m2!1ses!2ses!4v1584269635557!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function mahou_barrica() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#mahou_barrica').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/mahou\/mahou_barrica_0.jpg');
+        glass_image.attr('alt', 'mahou_barrica');
+        $('#glass-name').text('Mahou Barrica');
+        $('#glass-city').text('Madrid');
+        $('#glass-county').text('Spain');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d4461.898940063981!2d-3.6960865063057344!3d40.401774238159526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9395dd8b5fc537c!2sSupersol%20Supermercados!5e0!3m2!1ses!2ses!4v1584269635557!5m2!1ses!2ses');
+    }
+    
+
+    function mahou_maestra() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#mahou_maestra').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/mahou\/mahou_maestra_0.jpg');
+        glass_image.attr('alt', 'mahou_maestra');
+        $('#glass-name').text('Mahou Maestra');
+        $('#glass-city').text('Madrid');
+        $('#glass-county').text('Spain');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d2577.7783140098472!2d-3.678374764264496!3d40.395380068451296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x44e5e3c849f0954c!2sHipercor%20M%C3%A9ndez%20%C3%81lvaro!5e0!3m2!1ses!2ses!4v1584269723980!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

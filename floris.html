@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/floris/name.png" alt="Floris" class=""/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/floris/floris_0.jpg" alt="floris" style="transform: rotate(90deg);"/>
+        </figure>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Floris</text></p>
+        <p><b>City:</b> <text>Melle</text></p>
+        <p><b>Country:</b> <text>Belgium</text></p>
+        <p><b>Website:</b> <a href="https://www.brouwerijhuyghe.be/" target="_blank">https://www.brouwerijhuyghe.be/</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Floris</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">Brussels</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">Belgium</text></p>
+        <p><b>Got:</b> <text id="glass-got">steal</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7524.2392433058285!2d3.803081062458076!3d50.99926801496198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf46be04d4d3fe685!2sHuyghe%20Brewery!5e0!3m2!1ses!2ses!4v1583512635647!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.0655569623827!2d4.351701815745867!3d50.84847027953235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c380bd32d907%3A0x26e1f42d7ed8d292!2sDelirium%20Caf%C3%A9!5e0!3m2!1ses!2ses!4v1583778087963!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function floris() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#floris').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/floris\/floris_0.jpg');
+        glass_image.attr('alt', 'floris');
+        $('#glass-name').text('Floris');
+        $('#glass-city').text('Brussels');
+        $('#glass-county').text('Belgium');
+        $('#glass-got').text('steal');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d2519.0655569623827!2d4.351701815745867!3d50.84847027953235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c380bd32d907%3A0x26e1f42d7ed8d292!2sDelirium%20Caf%C3%A9!5e0!3m2!1ses!2ses!4v1583778087963!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>

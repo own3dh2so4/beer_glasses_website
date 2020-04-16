@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Own3dh2so4 Beer Glasses Collection</title>
+    <link rel="stylesheet" type="text/css" href="static/page.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header class="main-head">
+        <img id="name-imagen" src="img/grevensteiner/name.png" alt="Grevensteiner" class="background-color "/>
+    </header>
+    <div class="main-nav background-color">
+        <figure class="glass-photo">
+            <img id="glass-imagen" src="img/grevensteiner/grevensteiner_0.jpg" alt="grevensteiner" style="transform: rotate(90deg);"/>
+        </figure>
+        
+    </div>
+    <article class="brewery-info background-color">
+        <h1>Brewery</h1>
+        <p><b>Name:</b> <text>Grevensteiner</text></p>
+        <p><b>City:</b> <text>Meschede</text></p>
+        <p><b>Country:</b> <text>Germany</text></p>
+        <p><b>Website:</b> <a href="https://www.grevensteiner.de/" target="_blank">https://www.grevensteiner.de/</a></p>
+    </article>
+
+    <article class="glass-info background-color">
+        <h1>Glass</h1>
+        <p><b>Name:</b> <text id="glass-name">Grevensteiner</text></p>
+        <p><b>Bought City:</b> <text id="glass-city">Madrid</text></p>
+        <p><b>Bought Country:</b> <text id="glass-county">Spain</text></p>
+        <p><b>Got:</b> <text id="glass-got">buy</text></p>
+    </article>
+    <div class="brewery-map background-color">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10571.161700283039!2d8.123212895449157!3d51.302623428991055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bbe3cf93376de3%3A0x9da944b6b82f2900!2sBrauerei%20C.%20%26%20A.%20VELTINS%20GmbH%20%26%20Co.%20KG!5e0!3m2!1ses!2ses!4v1583957968515!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="glass-map background-color">
+        <iframe id="glass-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7226.131561448994!2d-3.716243804231371!3d40.40410838462579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227c52b28838d%3A0xcfff6ac186596f8!2sMakro%20Paseo%20Imperial!5e0!3m2!1ses!2ses!4v1583508359541!5m2!1ses!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="go-back">
+        <a href="index.html"><i class="left"></i></a>
+    </div>
+</div>
+</body>
+<script>
+
+    $('.circle').first().addClass('circle-selected');
+
+    
+
+    function grevensteiner() {
+        $('.circle-selected').removeClass('circle-selected');
+        $('#grevensteiner').addClass('circle-selected');
+        let glass_image = $('#glass-imagen');
+        glass_image.attr('src', 'img/grevensteiner\/grevensteiner_0.jpg');
+        glass_image.attr('alt', 'grevensteiner');
+        $('#glass-name').text('Grevensteiner');
+        $('#glass-city').text('Madrid');
+        $('#glass-county').text('Spain');
+        $('#glass-got').text('buy');
+        $('#glass-map').attr('src', 'https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d7226.131561448994!2d-3.716243804231371!3d40.40410838462579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227c52b28838d%3A0xcfff6ac186596f8!2sMakro%20Paseo%20Imperial!5e0!3m2!1ses!2ses!4v1583508359541!5m2!1ses!2ses');
+    }
+    
+</script>
+</html>
